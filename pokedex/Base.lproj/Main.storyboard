@@ -426,6 +426,8 @@
                                     <mask key="constraints">
                                         <exclude reference="A2E-Sx-gMc"/>
                                         <exclude reference="dHD-9d-K7W"/>
+                                        <exclude reference="ejH-gL-uxv"/>
+                                        <exclude reference="ogj-ly-q2M"/>
                                         <exclude reference="qC1-Mo-5FF"/>
                                         <exclude reference="rhw-zk-zaK"/>
                                     </mask>
@@ -461,14 +463,14 @@
                     </view>
                     <connections>
                         <outlet property="baseAttackLbl" destination="QU8-Vi-fgK" id="0Uo-xH-NqT"/>
-                        <outlet property="currentEvoImg" destination="Mxh-j9-7UY" id="6aL-7Y-ncE"/>
+                        <outlet property="currentEvoImg" destination="Mxh-j9-7UY" id="XeK-93-46j"/>
                         <outlet property="defenseLbl" destination="YYl-uN-Zjm" id="kdG-eZ-48y"/>
                         <outlet property="descriptionLbl" destination="hj7-j1-WBa" id="pMF-wd-VJq"/>
+                        <outlet property="evoLbl" destination="iyx-0M-SSD" id="qia-An-68v"/>
                         <outlet property="heightLbl" destination="Nkl-nE-Hyp" id="yUs-N5-ICF"/>
                         <outlet property="mainImg" destination="gtA-bh-UPV" id="pe0-MA-hwt"/>
                         <outlet property="nameLabel" destination="W6K-Zl-Eq8" id="DSn-Jv-Xno"/>
                         <outlet property="nextEvoImg" destination="L8C-Gb-09Z" id="gBF-ru-VPi"/>
-                        <outlet property="nextEvolutionTxtLbl" destination="iyx-0M-SSD" id="TaK-NJ-Uga"/>
                         <outlet property="pokedexIdLbl" destination="mDC-AY-OUj" id="jK1-uR-MfE"/>
                         <outlet property="typeLbl" destination="3d2-83-DVZ" id="Yd1-3s-jqo"/>
                         <outlet property="weightLbl" destination="KGV-pm-oxJ" id="9Pe-H8-tdx"/>
