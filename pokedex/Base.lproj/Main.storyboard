@@ -80,25 +80,25 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="egi-5G-Zhy">
-                                    <size key="itemSize" width="110" height="110"/>
+                                    <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PokeCell" reuseIdentifier="PokeCell" id="hSK-LD-Hoe" customClass="PokeCell" customModule="pokedex" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-KZ-NhV">
-                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="89"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-KZ-NhV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="81"/>
                                                     <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGt-qP-Vb6">
-                                                    <rect key="frame" x="0.0" y="89" width="110" height="21"/>
+                                                    <rect key="frame" x="0.0" y="79" width="100" height="21"/>
                                                     <animations/>
                                                     <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
@@ -218,7 +218,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GCX-FM-X8f">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GCX-FM-X8f">
                                 <rect key="frame" x="20" y="75" width="560" height="305"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OlU-Kc-Omi">
@@ -372,7 +372,7 @@
                                     <constraint firstAttribute="trailing" secondItem="eSf-Zn-ytg" secondAttribute="trailing" id="mvd-Eo-k07"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5qg-wU-xbb">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5qg-wU-xbb">
                                 <rect key="frame" x="21" y="460" width="560" height="120"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="101" translatesAutoresizingMaskIntoConstraints="NO" id="Mxh-j9-7UY">
@@ -389,7 +389,7 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kzf-wB-8Vj">
+                            <view hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kzf-wB-8Vj">
                                 <rect key="frame" x="1" y="423" width="600" height="29"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Next Evolution: LVL 32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyx-0M-SSD">
@@ -433,6 +433,15 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="TnE-dn-VXO">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="LVs-YD-Oo4"/>
+                                    <constraint firstAttribute="height" constant="20" id="Wkn-H0-6ms"/>
+                                </constraints>
+                                <color key="color" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -442,6 +451,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Kzf-wB-8Vj" secondAttribute="trailing" constant="-20" id="2fZ-es-oPh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zpj-Qx-hfS" secondAttribute="trailing" constant="-20" id="6pg-Yw-EAn"/>
                             <constraint firstItem="5qg-wU-xbb" firstAttribute="top" secondItem="Kzf-wB-8Vj" secondAttribute="bottom" id="76Y-YY-aWA"/>
+                            <constraint firstItem="TnE-dn-VXO" firstAttribute="centerX" secondItem="cO0-Ku-ZRj" secondAttribute="centerX" id="8X9-SZ-OKU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GCX-FM-X8f" secondAttribute="trailing" id="GUp-O5-rYY"/>
                             <constraint firstItem="Kzf-wB-8Vj" firstAttribute="leading" secondItem="cO0-Ku-ZRj" secondAttribute="leadingMargin" constant="-20" id="QXM-Wr-T36"/>
                             <constraint firstItem="5qg-wU-xbb" firstAttribute="leading" secondItem="cO0-Ku-ZRj" secondAttribute="leadingMargin" id="RHt-YE-99t"/>
@@ -452,6 +462,7 @@
                             <constraint firstItem="GCX-FM-X8f" firstAttribute="leading" secondItem="cO0-Ku-ZRj" secondAttribute="leadingMargin" id="neG-Cr-OYF"/>
                             <constraint firstItem="Kzf-wB-8Vj" firstAttribute="top" secondItem="GCX-FM-X8f" secondAttribute="bottom" constant="64" id="qjQ-cu-2a8"/>
                             <constraint firstItem="Kzf-wB-8Vj" firstAttribute="top" secondItem="GCX-FM-X8f" secondAttribute="bottom" constant="20" id="t46-Sm-j9F"/>
+                            <constraint firstItem="TnE-dn-VXO" firstAttribute="centerY" secondItem="cO0-Ku-ZRj" secondAttribute="centerY" id="yHA-FG-kEe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -466,12 +477,16 @@
                         <outlet property="currentEvoImg" destination="Mxh-j9-7UY" id="XeK-93-46j"/>
                         <outlet property="defenseLbl" destination="YYl-uN-Zjm" id="kdG-eZ-48y"/>
                         <outlet property="descriptionLbl" destination="hj7-j1-WBa" id="pMF-wd-VJq"/>
+                        <outlet property="evoBar" destination="Kzf-wB-8Vj" id="wrg-Tf-amh"/>
                         <outlet property="evoLbl" destination="iyx-0M-SSD" id="qia-An-68v"/>
+                        <outlet property="evoStack" destination="5qg-wU-xbb" id="Rm2-m8-G9i"/>
                         <outlet property="heightLbl" destination="Nkl-nE-Hyp" id="yUs-N5-ICF"/>
                         <outlet property="mainImg" destination="gtA-bh-UPV" id="pe0-MA-hwt"/>
+                        <outlet property="mainStack" destination="GCX-FM-X8f" id="c0Y-l5-uZl"/>
                         <outlet property="nameLabel" destination="W6K-Zl-Eq8" id="DSn-Jv-Xno"/>
                         <outlet property="nextEvoImg" destination="L8C-Gb-09Z" id="gBF-ru-VPi"/>
                         <outlet property="pokedexIdLbl" destination="mDC-AY-OUj" id="jK1-uR-MfE"/>
+                        <outlet property="spinner" destination="TnE-dn-VXO" id="gTI-5s-e0t"/>
                         <outlet property="typeLbl" destination="3d2-83-DVZ" id="Yd1-3s-jqo"/>
                         <outlet property="weightLbl" destination="KGV-pm-oxJ" id="9Pe-H8-tdx"/>
                     </connections>

@@ -23,8 +23,12 @@ class PokemonDetailsVC: UIViewController {
     @IBOutlet weak var currentEvoImg: UIImageView!
     @IBOutlet weak var nextEvoImg: UIImageView!
     @IBOutlet weak var evoLbl: UILabel!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    
+    // Views to hide then show when done loading
+    @IBOutlet weak var mainStack: UIStackView!
+    @IBOutlet weak var evoStack: UIStackView!
+    @IBOutlet weak var evoBar: UIView!
     
     var pokemon: Pokemon!
 
@@ -36,9 +40,11 @@ class PokemonDetailsVC: UIViewController {
         mainImg.image = image
         nextEvoImg.image = image
         currentEvoImg.image = image
+        showActivityIndicator()
             
         pokemon.downloadPokemonDetails { () -> () in
             self.UIInit()
+            self.hideActivityIndicator()
         }
     }
     
@@ -66,6 +72,24 @@ class PokemonDetailsVC: UIViewController {
             evoLbl.text = str;
         }
         
+    }
+    
+    func showActivityIndicator() {
+        mainStack.layer.hidden = true
+        evoStack.layer.hidden = true
+        evoLbl.layer.hidden = true
+        
+        spinner.layer.hidden = false
+        spinner.startAnimating()
+    }
+    
+    func hideActivityIndicator() {
+        mainStack.layer.hidden = false
+        evoStack.layer.hidden = false
+        evoLbl.layer.hidden = false
+        
+        spinner.stopAnimating()
+        spinner.layer.hidden = true
     }
     
     @IBAction func backButtonPressed(sender: AnyObject) {
